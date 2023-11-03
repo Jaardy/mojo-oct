@@ -1,12 +1,11 @@
 // create your User model here
 const { db } = require("../db/config");
-const {DataTypes} = require('sequelize')
+const { DataTypes } = require("sequelize");
 
-const Attack = db.define("attack", {
-    title: DataTypes.STRING,
-    mojoCost: DataTypes.INTEGER,
-    staminaCost: DataTypes.INTEGER
+const Attack = db.define("Attack", {
+  title: DataTypes.STRING,
+  mojoCost: DataTypes.INTEGER,
+  staminaCost: DataTypes.INTEGER,
 });
 
-
-module.exports = {Attack}
+module.exports = { Attack };
