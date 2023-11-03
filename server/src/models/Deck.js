@@ -2,8 +2,9 @@
 const { db } = require("../db/config");
 const { DataTypes } = require("sequelize");
 
-const User = db.define("user", {
-  username: DataTypes.STRING,
+const Deck = db.define("deck", {
+  name: DataTypes.STRING,
+  xp: DataTypes.INTEGER,
 });
 
-module.exports = { User };
+module.exports = { Deck };
